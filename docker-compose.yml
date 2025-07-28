@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: ayurveda-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - GEMINI_API_KEY=your_api_key_here
+    restart: always
+
+  frontend:
+    build: ./ayurveda-health-assistant-frontend
+    container_name: ayurveda-frontend
+    ports:
+      - "3000:80" # Expose nginx on port 3000
+    restart: always
