@@ -8,7 +8,7 @@ const chatRoutes = require("./routes/chat");
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://ayurvedahelp.netlify.app/",
 }));
 app.use(express.json());
 
