@@ -1,0 +1,164 @@
+/* Base styles */
+.page {
+  min-height: 100vh;
+  background-color: #e8f5e9;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(2, 2, 2, 0.728);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #4f774a;
+  font-style: italic;
+}
+
+.chatBox {
+  background: #ffffff;
+  border: 1px solid #c5e1a5;
+  border-radius: 10px;
+  height: 50vh;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.inputArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.input {
+  flex: 1 1 200px;
+  min-width: 160px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #a5d6a7;
+}
+
+.button {
+  padding: 10px 16px;
+  background: #66bb6a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.suggestionBox {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.suggestionBtn {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  background-color: #e0f2f1;
+  color: #004d40;
+  border: 1px solid #b2dfdb;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .input {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .suggestionBtn {
+    font-size: 13px;
+  }
+
+  .chatBox {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+  }
+
+  .chatBox {
+    height: 40vh;
+  }
+
+  .input {
+    min-width: 100%;
+  }
+
+  .inputArea {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .suggestionBox {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .suggestionBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
