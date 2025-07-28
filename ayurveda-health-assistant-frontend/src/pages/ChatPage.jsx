@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import ChatMessage from "../components/ChatMessage";
-import VoiceInput from "../components/VoiceInput";
-import WellnessTipCard from "../components/WellnessTipCard";
-import DoshaQuizButton from "../components/DoshaQuizButton";
+import ChatMessage from "../components/ChatMessage.jsx";
+import VoiceInput from "../components/VoiceInput.jsx";
+import WellnessTipCard from "../components/WellnessTipCard.jsx";
+
 import { getAyurvedaAdvice } from "../services/api";
 
 const ChatPage = () => {
