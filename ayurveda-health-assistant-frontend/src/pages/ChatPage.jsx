@@ -114,6 +114,13 @@ const ChatPage = () => {
 
   return (
     <div className="page">
+       <img src="https://cdn-icons-png.flaticon.com/128/5806/5806342.png" className="animated-icon icon1" alt="leaf" />
+      <img src="https://cdn-icons-png.flaticon.com/128/1202/1202099.png" className="animated-icon icon2" alt="clove" />
+      <img src="https://cdn-icons-png.flaticon.com/128/2901/2901355.png" className="animated-icon icon3" alt="rocksalt" />
+      <img src="https://cdn-icons-png.flaticon.com/128/6866/6866595.png" className="animated-icon icon4" alt="lemon" />
+      <img src="https://cdn-icons-png.flaticon.com/128/13523/13523349.png" className="animated-icon icon5" alt="neem" />
+      <img src="https://cdn-icons-png.flaticon.com/128/3413/3413290.png" className="animated-icon icon6" alt="leaf" />
+      <img src="https://cdn-icons-png.flaticon.com/128/4165/4165744.png" className="animated-icon icon7" alt="clove" />
       <div className="container">
         <div className="header">
           <div className="title">🌿 Ayurveda Health Chatbot</div>
